@@ -1,0 +1,20 @@
+------------------------------------------------------------------------
+r74120 | kalman | 2008-05-17 01:42:17 -0400 (Sat, 17 May 2008) | 3 lines
+Changed paths:
+   M /trunk/DotDotDot/Core.lua
+   M /trunk/DotDotDot/DotDotDot.toc
+
+DotDotDot:
+  - Fix for dispel/falloff of someone else's debuff briefly removing yours
+
+------------------------------------------------------------------------
+r70628 | kalman | 2008-04-20 16:01:29 -0400 (Sun, 20 Apr 2008) | 4 lines
+Changed paths:
+   M /trunk/DotDotDot/Core.lua
+   M /trunk/DotDotDot/DotDotDot.toc
+
+DotDotDot:
+  - Curses now removed when swapping between them on one mob
+  - Other random removals (non-dispels) should work as well
+
+------------------------------------------------------------------------

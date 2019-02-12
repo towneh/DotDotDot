@@ -1,0 +1,35 @@
+## Interface: 20400
+
+## Title: DotDotDot |cff7fff7f -Ace2-|r
+## Notes: Fixed time DoT monitor.
+## Author: Kalman
+## Version: 1.13.$Revision$
+## X-Date: $Date$
+## X-Email: kalman@radiationnow.net
+## X-Category: Combat
+## X-Website: http://www.wowace.com
+## X-Credits: Nev for addon framework from HotCandy
+
+## DefaultState: enabled
+## LoadOnDemand: 0
+
+## OptionalDeps: Ace2, BabbleLib, PaintChipsLib, CandyBar, Babble-2.2, SharedMediaLib
+## X-Embeds: Ace2, BabbleLib, PaintChipsLib, CandyBar, Babble-2.2 
+
+## SavedVariables: DotDotDotDB
+
+libs\AceLibrary\AceLibrary.lua
+libs\AceOO-2.0\AceOO-2.0.lua
+libs\AceEvent-2.0\AceEvent-2.0.lua
+libs\AceConsole-2.0\AceConsole-2.0.lua
+libs\AceAddon-2.0\AceAddon-2.0.lua
+libs\AceDB-2.0\AceDB-2.0.lua
+libs\AceDebug-2.0\AceDebug-2.0.lua
+libs\AceLocale-2.2\AceLocale-2.2.lua
+
+libs\Babble-Spell-2.2\Babble-Spell-2.2.lua
+libs\PaintChips-2.0\PaintChips-2.0.lua
+libs\CandyBar-2.0\CandyBar-2.0.lua
+
+Core.lua
+Anchor.lua

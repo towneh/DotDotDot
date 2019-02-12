@@ -10,3 +10,5 @@ DotDotDot is a DoT tracker using a different display model than standard DoT tim
 
 ## Known Issues
 - Mouseover-targeted (or targeting by unitid suffixed by N target statements) DoTs are not tracked until you either target or focus the unit you dotted. - untested, but should be working for mouseovers now.  targettarget and similar will still need to be targeted to be tracked.
+
+![Example](https://i.imgur.com/AEYOfFn.png)

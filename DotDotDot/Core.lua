@@ -261,6 +261,7 @@ function DotDotDot:OnInitialize()
 
 	
 	self.shortcode = {
+		-- Comment out the spells below that you don't want to track
 		[BS['Curse of the Elements']] = L['CoE'],
 		[BS['Curse of Weakness']] = L['CoW'],
 		[BS['Curse of Shadow']] = L['CoS'],

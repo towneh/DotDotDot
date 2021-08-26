@@ -390,16 +390,18 @@ function DotDotDot:UpdateDebuffs(unit)
 	self = DotDotDot
 	if (UnitExists(unit)) then
 		for num = 1, 40 do
-			local name, _, texture, applications, _, duration, timeLeft
-			name, _, texture, applications, _, duration, timeLeft = UnitDebuff(unit, num)
-			if (duration) then
-				if (self.shortcode[name]) then
-					guid = (UnitGUID(unit) .. "-" .. self.shortcode[name])
-                    if unit == "target" then
-                        self:ShowCandyBar(self.shortcode[name].." - "..(UnitName(unit) or ""), guid, timeLeft, BS:GetSpellIcon(name), true, self.db.profile.highcolor)
-                    else
-                        self:ShowCandyBar(self.shortcode[name].." - "..(UnitName(unit) or ""), guid, timeLeft, BS:GetSpellIcon(name), false, self.db.profile.basecolor)
-                    end
+			local name, rank, icon, count, debuffType, duration, expirationTime, isMine, isStealable = UnitDebuff(unit, num)
+			if (isMine) then
+				if (duration) then
+					if (self.shortcode[name]) then
+						local guid = (UnitGUID(unit) .. "-" .. self.shortcode[name])
+						local timeLeft = expirationTime - GetTime()
+                    				if unit == "target" then
+                        				self:ShowCandyBar(self.shortcode[name].." - "..(UnitName(unit) or ""), guid, timeLeft, BS:GetSpellIcon(name), true, self.db.profile.highcolor)
+                    				else
+                        				self:ShowCandyBar(self.shortcode[name].." - "..(UnitName(unit) or ""), guid, timeLeft, BS:GetSpellIcon(name), false, self.db.profile.basecolor)
+						end
+                    			end
 				end
 			end
 		end			
